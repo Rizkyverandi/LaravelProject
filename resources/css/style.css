@@ -1,0 +1,24 @@
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*Image Hover */
+img {
+  opacity: 0.5;
+  filter: alpha(opacity=40);
+}
+
+img:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
